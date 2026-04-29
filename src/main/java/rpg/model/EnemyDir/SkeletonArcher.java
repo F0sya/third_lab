@@ -1,7 +1,4 @@
-package org.example;
-
-
-import java.util.Objects;
+package rpg.model.EnemyDir;
 
 public class SkeletonArcher extends SkeletonWarrior {
     private int arrowsCount;
@@ -22,7 +19,6 @@ public class SkeletonArcher extends SkeletonWarrior {
         }
     }
 
-
     public int getArrowsCount(){
         return arrowsCount;
     }
@@ -35,8 +31,7 @@ public class SkeletonArcher extends SkeletonWarrior {
         return "SkeletonArcher{" +
                 "name='" + getName() + '\'' +
                 ", hp=" + getHP() +
-                ", arrowsCount=" + arrowsCount + // Ось твоє нове поле!
+                ", arrowsCount=" + arrowsCount +
                 '}';
     }
-
 }

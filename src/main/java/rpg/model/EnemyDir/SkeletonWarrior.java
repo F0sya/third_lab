@@ -1,10 +1,6 @@
-package org.example;
-
-import org.example.Weapon;
+package rpg.model.EnemyDir;
 
 import java.util.Objects;
-
-import java.awt.*;
 
 public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
 
@@ -13,15 +9,12 @@ public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
     private double damageMultiplier;
     private String name;
     private boolean isActive;
-
     private Weapon weapon;
-
     private int x;
     private int y;
 
-
     public SkeletonWarrior(){
-        this(100,1.2,"Скелет-воїн");
+        this(100, 1.2, "Скелет-воїн");
     }
 
     public SkeletonWarrior(int hp, double damageMultiplier, String name){
@@ -30,7 +23,8 @@ public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
         this.damageMultiplier = damageMultiplier;
         this.name = name;
         this.isActive = false;
-        this.weapon = new Weapon(100);    }
+        this.weapon = new Weapon(100);
+    }
 
     public void takeDamage(int amount){
         this.hp -= amount;
@@ -54,9 +48,6 @@ public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
         this.y += dy;
     }
 
-
-
-
     public int getX() { return x; }
     public void setX(int x) { this.x = x; }
 
@@ -79,7 +70,6 @@ public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
 
     public int getMaxHP() {return maxHP;}
     public void setMaxHP(int maxHP) { this.maxHP = maxHP;}
-
 
     @Override
     public boolean equals(Object o) {

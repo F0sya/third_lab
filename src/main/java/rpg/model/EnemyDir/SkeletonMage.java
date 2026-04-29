@@ -1,22 +1,15 @@
-package org.example;
-
-
-import java.util.Objects;
-
+package rpg.model.EnemyDir;
 
 public class SkeletonMage extends SkeletonArcher {
     private int mana;
 
     public SkeletonMage() {
-
         super(60, 2.5, "Скелет-маг", 10 );
         this.mana = 50;
     }
 
-    public SkeletonMage(int hp, double damageMultiplier, String name,int arrowsCount, int mana) {
-        // Передаємо параметри в конструктор SkeletonArcher
+    public SkeletonMage(int hp, double damageMultiplier, String name, int arrowsCount, int mana) {
         super(hp, damageMultiplier, name, arrowsCount);
-        // Встановлюємо значення для мага
         this.mana = mana;
     }
 
@@ -27,15 +20,21 @@ public class SkeletonMage extends SkeletonArcher {
         }
     }
 
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
     @Override
     public String toString() {
         return "SkeletonMage{" +
                 "name='" + getName() + '\'' +
                 ", hp=" + getHP() +
                 ", arrowsCount=" + getArrowsCount() +
-                ", mana=" + mana + // Ось твоє нове поле!
+                ", mana=" + mana +
                 '}';
     }
-
-
 }
