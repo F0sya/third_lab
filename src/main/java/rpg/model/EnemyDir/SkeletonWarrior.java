@@ -81,7 +81,7 @@ public class SkeletonWarrior implements Cloneable, Comparable<SkeletonWarrior> {
 
     @Override
     public String toString() {
-        return "SkeletonWarrior{name='" + name + "', hp=" + hp + ", dmg=" + damageMultiplier + ", active=" + isActive + '}';
+        return "SkeletonWarrior{name='" + name + "', hp=" + hp + ", dmg=" + damageMultiplier + ", weaponDurability=" + weapon.getDurability() + ", active=" + isActive + '}';
     }
 
     @Override

@@ -31,6 +31,7 @@ public class SkeletonArcher extends SkeletonWarrior {
         return "SkeletonArcher{" +
                 "name='" + getName() + '\'' +
                 ", hp=" + getHP() +
+                ", weaponDurability=" + getWeapon().getDurability() +
                 ", arrowsCount=" + arrowsCount +
                 '}';
     }

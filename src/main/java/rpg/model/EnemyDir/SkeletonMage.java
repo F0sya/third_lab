@@ -33,6 +33,7 @@ public class SkeletonMage extends SkeletonArcher {
         return "SkeletonMage{" +
                 "name='" + getName() + '\'' +
                 ", hp=" + getHP() +
+                ", weaponDurability=" + getWeapon().getDurability() +
                 ", arrowsCount=" + getArrowsCount() +
                 ", mana=" + mana +
                 '}';
